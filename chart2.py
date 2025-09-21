@@ -34,9 +34,9 @@ st.set_page_config(
     # To specify a Windows path, use either a raw string (prefix with r) or double backslashes.
     # Also, Streamlit's page_icon can accept a path, but it's best to use a relative path or ensure the file exists.
     # Example with raw string:
-    page_icon=r"E:\fixedp\Azad_University_logo.png",
+    page_icon="Azad_University_logo.png",
     # Or with double backslashes:
-    # page_icon="E:\\fixedp\\Azad_University_logo.png",
+    # page_icon="Azad_University_logo.png",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -170,7 +170,7 @@ def load_sample_data():
 def create_main_header():
     """ایجاد هدر اصلی"""
     # تلاش برای بارگذاری لوگوی سفارشی و نمایش آن بالای عنوان
-    logo_path = r"E:\fixedp\Azad_University_logo.png"
+    logo_path = "Azad_University_logo.png"
     logo_html = ""
     try:
         if os.path.exists(logo_path):
@@ -2085,4 +2085,5 @@ def main():
     st.sidebar.success("✅ تمام داده‌ها بارگیری شد")
 
 if __name__ == "__main__":
+
     main()
